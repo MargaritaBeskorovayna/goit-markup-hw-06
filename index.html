@@ -129,25 +129,34 @@ problem to walk away with the perfect and creative solution. </p></li>
 <p class="modal-text">
     Leave your contacts and we will call you back
 </p>
-<form class="modal-form">
+<form class="modal-form"><div class="form-wrapper">
 <label for="user_name" class="label-text">Name </label>
 <input type="text" name="user_name" id="user_name" class="input-field"/>
-<svg class="icon-modal" width="18px" height="24px">
+<svg class="icon-modal" width="12px" height="12px">
     <use href="./images/icons.svg#icon-Vector-two"></use>
-</svg>
+</svg></div>
+<div class="form-wrapper">
 <label for="user_phone" class="label-text">Phone</label>
 <input type="tel" name="user_phone" id="user_phone" class="input-field"/>
-<svg class="icon-modal" width="18px" height="24px">
+<svg class="icon-modal" width="13px" height="13px">
     <use href="./images/icons.svg#icon-Vector-three"></use>
-</svg>
+</svg></div>
+<div class="form-wrapper" >
 <label for="user_email" class="label-text">Email</label>
 <input type="email" name="user_email" id="user_email" class="input-field"/>
-<svg class="icon-modal" width="18px" height="24px">
+<svg class="icon-modal" width="15px" height="12px">
     <use href="./images/icons.svg#icon-Vector-four"></use>
 </svg>
-<input type="checkbox" name="privacy" id="privacy"/><label class="label-text" name="privacy" for="privacy">I accept the terms and conditions of the <a href=""> Privacy Policy</a></label>
+</div>
+<input type="checkbox" name="privacy" id="privacy" hidden/><label class="label-text" name="privacy" for="privacy">I accept the terms and conditions of the <a href=""> Privacy Policy</a></label>
 <label class="label-text" for="user_comment">Comment</label>
-
+<span>
+    <svg>
+        <use>
+            
+        </use>
+    </svg>
+</span>
 <textarea placeholder="Text input" class="comment" name="user_comment" id="user_comment"></textarea>
 <button type="submit" class="modal-button">Send</button>
 </form>
