@@ -731,6 +731,49 @@ border: 1px solid #4D5AE5;
 .input-field:focus+.icon-modal{
     fill: #4D5AE5;
 }
+.checktext {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+   
+    
+  }
+
+  .checktext span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition:background-color var(--trasform-duration--) var(---transition-function--) ;
+  transition: fill var(--trasform-duration--) var(---transition-function--);
+}
+  .input-check:checked + .checktext span{
+    background-color: #404BBF;
+    border-color:none  ;
+    fill: #F4F4FD;
+
+  }
+     .input-check:focus + .checktext span{
+        border-color:#404BBF ;
+     }
+     .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
 
 
 
